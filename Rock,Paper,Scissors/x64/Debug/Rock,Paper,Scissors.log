@@ -1,9 +1,6 @@
 ﻿  RPS.cpp
-C:\Users\Swastik.Toprani\source\repos\Rock,Paper,Scissors\Rock,Paper,Scissors\RPS.h(8,6): error C2086: 'int RPS::scoreP1': redefinition
-  (compiling source file 'RPS.cpp')
-  
+D:\SimpleRPS\Rock,Paper,Scissors\RPS.cpp(79,24): warning C4553: '==': result of expression not used; did you intend '='?
   Rock,Paper,Scissors.cpp
-C:\Users\Swastik.Toprani\source\repos\Rock,Paper,Scissors\Rock,Paper,Scissors\RPS.h(8,6): error C2086: 'int RPS::scoreP1': redefinition
-  (compiling source file 'Rock,Paper,Scissors.cpp')
-  
   Generating Code...
+D:\SimpleRPS\Rock,Paper,Scissors\RPS.cpp(73,1): warning C4715: 'RPS::GetScoreArray': not all control paths return a value
+  Rock,Paper,Scissors.vcxproj -> D:\SimpleRPS\x64\Debug\Rock,Paper,Scissors.exe
