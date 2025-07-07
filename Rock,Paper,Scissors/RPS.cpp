@@ -1,37 +1,10 @@
 #include<iostream>
 #include<vector>
-#include<ctime>
+//#include<ctime> dont need this 
+#include<limits>
 #include"RPS.h"
 
-static std::vector<std::string>drawHands =
-{
-R"(
-        _______
-    ---'   ____)
-          (_____)
-          (_____)
-          (____)
-    ---.__(___)
-  )",
 
- R"(
-        _______
-    ---'   ____)____
-              ______)
-              _______)
-             _______)
-    ---.__________)
-  )",
-R"(
-        _______
-    ---'   ____)____
-          __________)
-          ___________)
-         (____)
-    ---.__(___)
-  )"
-
-};
 void RPS::RandomChoice()
 {
 	
@@ -112,7 +85,7 @@ void RPS::CheckWin(int compNum, int PlayerInput)
 
 int RPS::GetScoreArray(int index)const
 {
-    if (index >= 0 && index <= 2) 
+    if (index >= 0 && index <= 1) 
     {
         return scoreArray[index];
     }
@@ -173,7 +146,7 @@ int RPS::GetValidInput(int input)
 void RPS::compareScores(int compScore, int userScore) const
 {
     if (compScore == userScore)PrintDraw();
-    if (compScore < userScore) PrintWin();
+    else if (compScore < userScore) PrintWin();
     else PrintLose();
   
 

@@ -1,4 +1,6 @@
 #pragma once
+#include <vector>
+#include <string>
 class RPS
 {
 
@@ -7,6 +9,35 @@ private:
 	int scoreArray[2];
 	int Moves;//Can be infinte and we can keep track of the scores/;
 	int userInput;
+	std::vector<std::string>drawHands
+	{
+	R"(
+        _______
+    ---'   ____)
+          (_____)
+          (_____)
+          (____)
+    ---.__(___)
+  )",
+
+ R"(
+        _______
+    ---'   ____)____
+              ______)
+              _______)
+             _______)
+    ---.__________)
+  )",
+R"(
+        _______
+    ---'   ____)____
+          __________)
+          ___________)
+         (____)
+    ---.__(___)
+  )"
+
+	};
 
 public:
 	RPS() 
