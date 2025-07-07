@@ -19,16 +19,35 @@ public:
 		userInput = 0;
 	}
 
-	void RandomChoice();
-	void StartGame()const;
 	
+	void RandomChoice();//Gives a random input for the computer and checks win draw condition//Also print the different hands
+
+	void StartGame()const;
+	void EndGame()const;
+
+	//Check who won the player or the computer in that round//
+	void CheckWin(int compNum, int PlayerInput);
+
+	//To get and set score ...Tbf dont actually need them ngl....maybe getter//
 	int GetScoreArray(int index)const;
 	void SetScoreArray(int index , int addedElement);
+
+	//Get & set dem user moves//
 	int Getmoves()const;
 	void SetMoves(int numMoves);
-	void PrintWin()const;
-	void PrintLose()const;
+
+	//User input getter and setter//
 	int GetuserInput()const;
 	void SetuserInput(int input);
+
+	//Print win and lose condition//
+	void PrintWin()const;
+	void PrintLose()const;
+	void PrintDraw()const;
+
+	//Validate input
+	int GetValidInput(int input);
+
+	void compareScores(int compScore, int userScore)const;
 
 };

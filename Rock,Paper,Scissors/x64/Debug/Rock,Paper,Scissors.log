@@ -1,6 +1,4 @@
 ﻿  RPS.cpp
-D:\SimpleRPS\Rock,Paper,Scissors\RPS.cpp(79,24): warning C4553: '==': result of expression not used; did you intend '='?
   Rock,Paper,Scissors.cpp
   Generating Code...
-D:\SimpleRPS\Rock,Paper,Scissors\RPS.cpp(73,1): warning C4715: 'RPS::GetScoreArray': not all control paths return a value
-  Rock,Paper,Scissors.vcxproj -> D:\SimpleRPS\x64\Debug\Rock,Paper,Scissors.exe
+  Rock,Paper,Scissors.vcxproj -> C:\Users\Swastik.Toprani\source\repos\Rock,Paper,Scissors\SimpleRPS\x64\Debug\Rock,Paper,Scissors.exe
