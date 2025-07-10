@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{624AE65C-ACEA-4B2E-AE49-877F62C1F688}|Rock,Paper,Scissors\\Rock,Paper,Scissors.vcxproj|C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\RPS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624AE65C-ACEA-4B2E-AE49-877F62C1F688}|Rock,Paper,Scissors\\Rock,Paper,Scissors.vcxproj|solutionrelative:Rock,Paper,Scissors\\RPS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{624AE65C-ACEA-4B2E-AE49-877F62C1F688}|Rock,Paper,Scissors\\Rock,Paper,Scissors.vcxproj|C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\RPS.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{624AE65C-ACEA-4B2E-AE49-877F62C1F688}|Rock,Paper,Scissors\\Rock,Paper,Scissors.vcxproj|solutionrelative:Rock,Paper,Scissors\\RPS.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{624AE65C-ACEA-4B2E-AE49-877F62C1F688}|Rock,Paper,Scissors\\Rock,Paper,Scissors.vcxproj|C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\Rock,Paper,Scissors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624AE65C-ACEA-4B2E-AE49-877F62C1F688}|Rock,Paper,Scissors\\Rock,Paper,Scissors.vcxproj|solutionrelative:Rock,Paper,Scissors\\Rock,Paper,Scissors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{624AE65C-ACEA-4B2E-AE49-877F62C1F688}|Rock,Paper,Scissors\\Rock,Paper,Scissors.vcxproj|C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\RPS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624AE65C-ACEA-4B2E-AE49-877F62C1F688}|Rock,Paper,Scissors\\Rock,Paper,Scissors.vcxproj|solutionrelative:Rock,Paper,Scissors\\RPS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624AE65C-ACEA-4B2E-AE49-877F62C1F688}|Rock,Paper,Scissors\\Rock,Paper,Scissors.vcxproj|C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\Rock_Paper_Scissors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624AE65C-ACEA-4B2E-AE49-877F62C1F688}|Rock,Paper,Scissors\\Rock,Paper,Scissors.vcxproj|solutionrelative:Rock,Paper,Scissors\\Rock_Paper_Scissors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RPS.h",
               "DocumentMoniker": "C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\RPS.h",
               "RelativeDocumentMoniker": "Rock,Paper,Scissors\\RPS.h",
-              "ToolTip": "C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\RPS.h*",
-              "RelativeToolTip": "Rock,Paper,Scissors\\RPS.h*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\RPS.h",
+              "RelativeToolTip": "Rock,Paper,Scissors\\RPS.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-07-04T12:53:45.373Z",
               "IsPinned": true,
@@ -44,13 +44,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "RPS.cpp",
               "DocumentMoniker": "C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\RPS.cpp",
               "RelativeDocumentMoniker": "Rock,Paper,Scissors\\RPS.cpp",
-              "ToolTip": "C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\RPS.cpp",
-              "RelativeToolTip": "Rock,Paper,Scissors\\RPS.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\RPS.cpp*",
+              "RelativeToolTip": "Rock,Paper,Scissors\\RPS.cpp*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAwDAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-04T12:53:47.097Z",
               "EditorCaption": ""
@@ -58,12 +58,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Rock,Paper,Scissors.cpp",
-              "DocumentMoniker": "C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\Rock,Paper,Scissors.cpp",
-              "RelativeDocumentMoniker": "Rock,Paper,Scissors\\Rock,Paper,Scissors.cpp",
-              "ToolTip": "C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\Rock,Paper,Scissors.cpp",
-              "RelativeToolTip": "Rock,Paper,Scissors\\Rock,Paper,Scissors.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABBAAAAAAAAAA==",
+              "Title": "Rock_Paper_Scissors.cpp",
+              "DocumentMoniker": "C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\Rock_Paper_Scissors.cpp",
+              "RelativeDocumentMoniker": "Rock,Paper,Scissors\\Rock_Paper_Scissors.cpp",
+              "ToolTip": "C:\\Users\\Swastik.Toprani\\source\\repos\\Rock,Paper,Scissors\\SimpleRPS\\Rock,Paper,Scissors\\Rock_Paper_Scissors.cpp",
+              "RelativeToolTip": "Rock,Paper,Scissors\\Rock_Paper_Scissors.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-04T12:53:47.562Z",
               "EditorCaption": ""

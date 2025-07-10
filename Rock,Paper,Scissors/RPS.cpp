@@ -1,33 +1,16 @@
 #include<iostream>
 #include<vector>
-//#include<ctime> dont need this 
+#include<ctime> 
 #include<limits>
 #include"RPS.h"
 
-
-void RPS::RandomChoice()
+void RPS::HandleCompMove()
 {
-	
-  
-    const int randomNum = std::rand() % drawHands.size(); //I think the math might be Wrong maybe (max-min)+min or well i am stupid AHHH just mod by array size lol
-    
-    std::cout << "The Computer showed " << drawHands[randomNum] << std::endl;
-    std::cout << "You showed " << drawHands[userInput] << std::endl;
-    if (userInput == randomNum) 
-    {
-        std::cout << "oooooooo thats a draw ! Go again ! " << std::endl;
-        Moves--;
-    }
-    else 
-    {
-    //call the check function.
-        CheckWin(randomNum, userInput);
-    }
+    compInput = std::rand() % drawHands.size();
 }
 
-void RPS::StartGame()const
+void RPS::StartGame()
 {
-	//TODO : Print StartGame Text . 
 	std::cout << "This is Rock Paper Scissors\n";
 	std::cout << "Use numbers 0,1 or 2 To make your make a valid move \n"; 
     std::cout << std::endl;
@@ -46,73 +29,47 @@ void RPS::StartGame()const
     std::cout << "\n";
     std::cout << drawHands[2];
     std::cout << std::endl;
-	//Add more later 
 
     std::cout << "Enter the number of rounds you want to play ->";
+    std::cin >> moves;
 }
 
 void RPS::EndGame() const
 {
     std::cout << "The Game comes to an EnD" << std::endl;
-    compareScores(scoreArray[0], scoreArray[1]);
+    CompareScores(scoreArray[0], scoreArray[1]);
 }
 
-void RPS::CheckWin(int compNum, int PlayerInput)
+void RPS::CheckWin()
 {
-    if ((compNum == 0 && PlayerInput == 1)|| 
-        (compNum == 1 && PlayerInput == 2)||
-        (compNum == 2 && PlayerInput == 0))
+    std::cout << "The Computer showed " << drawHands[compInput] << std::endl;
+    std::cout << "You showed " << drawHands[userInput] << std::endl;
+
+    if (userInput == compInput)
+    {
+        std::cout << "oooooooo thats a draw ! Go again ! " << std::endl;
+        moves--;
+    }
+    else if ((compInput == 0 && userInput == 1) ||
+        (compInput == 1 && userInput == 2) ||
+        (compInput == 2 && userInput == 0))
     {
         //User wins condition
         std::cout << "Player wins this round" << std::endl;
         scoreArray[1] += 1;
-        Moves--;
+        moves--;
     }
     else
     {
         //Comp win condition
         std::cout << "Computer win this round" << std::endl;
         scoreArray[0] += 1;
-        Moves--;
+        moves--;
     }
 
     std::cout<<"Score" << std::endl;
     std::cout<<"Computer -> "<<scoreArray[0]<< std::endl;
     std::cout <<"Player -> " << scoreArray[1] << std::endl;
-
-}
-
-
-int RPS::GetScoreArray(int index)const
-{
-    if (index >= 0 && index <= 1) 
-    {
-        return scoreArray[index];
-    }
-    else
-    {
-        std::cout << "Wrong input in GetScore Array , Array out of bounds." << std::endl;;
-    }
-    return -1;
-}
-
-void RPS::SetScoreArray(int index, int addedElement)
-{
-    if (index >= 0 && index <= 2)
-    {
-     scoreArray[index] = addedElement;
-    }
-}
-
-
-int RPS::Getmoves()const
-{
-    return Moves;
-}
-
-void RPS::SetMoves(int numMoves)
-{
-    Moves = numMoves;
 }
 
 void RPS::PrintWin()const
@@ -131,35 +88,52 @@ void RPS::PrintDraw() const
 
 }
 
-int RPS::GetValidInput(int input)
+void RPS::HandlePlayerInput()
 {
-    while (input < 0 || input > 2)
+    int playerInput{ 0 };
+    std::cout << "Enter your move ->";
+	std::cin >> playerInput;
+
+    while (playerInput < 0 || playerInput > 2)
     {
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         std::cout << "Input not valid ! Retry input from 0 to 2" << std::endl;
-        std::cin >> input;
+        std::cin >> playerInput;
     }
-    return input;
+
+    userInput = playerInput;
 }
 
-void RPS::compareScores(int compScore, int userScore) const
+void RPS::CompareScores(int compScore, int userScore) const
 {
-    if (compScore == userScore)PrintDraw();
-    else if (compScore < userScore) PrintWin();
-    else PrintLose();
-  
-
+    if (compScore == userScore)
+    {
+        PrintDraw();
+    }
+    else if (compScore < userScore)
+    {
+        PrintWin();
+    }
+    else
+    {
+        PrintLose();
+    }
 }
 
-int RPS::GetuserInput() const
+void RPS::PlayGame()
 {
-    return userInput;
+    StartGame();
+
+    for (; moves >= 0; moves--) 
+    {
+        HandlePlayerInput();
+        HandleCompMove();
+        CheckWin();
+    }
+
+    EndGame();
 }
 
-void RPS::SetuserInput(int input)
-{
-    userInput = input;
-}
 
 

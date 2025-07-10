@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Rock,Paper,Scissors.cpp">
+    <ClCompile Include="Rock_Paper_Scissors.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RPS.cpp">

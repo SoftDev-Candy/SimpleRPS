@@ -1,84 +1,61 @@
 #pragma once
 #include <vector>
 #include <string>
+
 class RPS
 {
 
 private:
-	//int maxValues;//I dont know what to name this variable.its for the number of rps elements if i want to increase them later to  5 or someting else.
-	int scoreArray[2];
-	int Moves;//Can be infinte and we can keep track of the scores/;
-	int userInput;
-	std::vector<std::string>drawHands
+	int scoreArray[2] = {0};
+	int moves = 0;//Can be infinte and we can keep track of the scores/;
+	int userInput = 0;
+	int compInput = 0;
+
+	std::vector<std::string> drawHands
 	{
-	R"(
-        _______
-    ---'   ____)
-          (_____)
-          (_____)
-          (____)
-    ---.__(___)
-  )",
-
- R"(
-        _______
-    ---'   ____)____
-              ______)
-              _______)
-             _______)
-    ---.__________)
-  )",
-R"(
-        _______
-    ---'   ____)____
-          __________)
-          ___________)
-         (____)
-    ---.__(___)
-  )"
-
+		R"(
+			_______
+		---'   ____)
+			  (_____)
+			  (_____)
+			  (____)
+		---.__(___)
+		)",
+		R"(
+			_______
+		---'   ____)____
+				  ______)
+				  _______)
+				 _______)
+		---.__________)
+		)",
+		R"(
+			_______
+		---'   ____)____
+			  __________)
+			  ___________)
+			 (____)
+		---.__(___)
+		)"
 	};
 
 public:
-	RPS() 
-	{
-		Moves = 0;
-		for (int i =0;i<2;i++)
-		{ 
-			scoreArray[i] = 0;
-		}	
-		userInput = 0;
-	}
-
-	
-	void RandomChoice();//Gives a random input for the computer and checks win draw condition//Also print the different hands
-
-	void StartGame()const;
+	void HandleCompMove();//Gives a random input for the computer//
+	void StartGame();
 	void EndGame()const;
 
 	//Check who won the player or the computer in that round//
-	void CheckWin(int compNum, int PlayerInput);
+	void CheckWin();
 
-	//To get and set score ...Tbf dont actually need them ngl....maybe getter//
-	int GetScoreArray(int index)const;
-	void SetScoreArray(int index , int addedElement);
-
-	//Get & set dem user moves//
-	int Getmoves()const;
-	void SetMoves(int numMoves);
-
-	//User input getter and setter//
-	int GetuserInput()const;
-	void SetuserInput(int input);
-
-	//Print win and lose condition//
+	//Print win and lose condition also draw//
 	void PrintWin()const;
 	void PrintLose()const;
 	void PrintDraw()const;
 
-	//Validate input
-	int GetValidInput(int input);
-
-	void compareScores(int compScore, int userScore)const;
-
+	//Validate input//
+	void HandlePlayerInput();
+	
+	void CompareScores(int compScore, int userScore)const;
+	//Contains the main game loop//
+	void PlayGame();
 };

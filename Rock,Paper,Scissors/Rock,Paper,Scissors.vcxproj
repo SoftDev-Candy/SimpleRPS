@@ -24,6 +24,7 @@
     <ProjectGuid>{624ae65c-acea-4b2e-ae49-877f62c1f688}</ProjectGuid>
     <RootNamespace>RockPaperScissors</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Rock_Paper_Scissors</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Rock,Paper,Scissors.cpp" />
+    <ClCompile Include="Rock_Paper_Scissors.cpp" />
     <ClCompile Include="RPS.cpp" />
   </ItemGroup>
   <ItemGroup>
